@@ -25,7 +25,7 @@ import VectorTileLayer from 'ol/layer/VectorTile';
 import * as pmtiles from 'pmtiles';
 import { SKChart } from 'src/app/modules';
 import LayerGroup from 'ol/layer/Group';
-import { apply } from 'ol-mapbox-style';
+// import { apply } from 'ol-mapbox-style';
 import { FeatureLike } from 'ol/Feature';
 
 // ** Freeboard resource collection format **
@@ -197,7 +197,7 @@ export class FreeboardChartLayerComponent
                 zIndex: this.zIndex + parseInt(i)
               });
               lg.set('id', charts[i][0]);
-              apply(lg, `${charts[i][1].url}`);
+              // apply(lg, `${charts[i][1].url}`);
               map.addLayer(lg);
             } else if (
               charts[i][1].format === 'pbf' ||
